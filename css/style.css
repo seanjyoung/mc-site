@@ -1,0 +1,272 @@
+/*------------------------------------*\
+    RESET
+\*------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0b1 | 201101 
+    NOTE:WORK IN PROGRESS
+    USE WITH CAUTION AND TEST WITH ABANDON */
+
+/* grid-auto-rows: minmax(125px, auto); */
+
+.grid-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1040px;
+    padding: 0 24px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 500px){
+
+    .inline-link-list {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 500px){
+
+    .inline-link-list {
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .tita-item{
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .landscape-photo{
+        margin: 0 12px;
+    }
+
+    #tita-item-row{
+        flex-direction: column;
+    }
+
+    #tita-collective h2{
+        text-align: left;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .hero{
+        max-width: 83.33%;
+    }
+
+    .landscape-photo{
+        margin: 0 24px;
+    }
+
+    .tita-item{
+        width: 33.33%;
+        margin: 0 12px;
+    }
+
+    #tita-collective h2{
+        text-align: center;
+        margin-top: 32px;
+    }
+
+    #tita-item-row{
+        flex-direction: row;
+        justify-content: center;
+        width: calc(100% + 12px);
+        margin-left: -12px;
+    }
+}
+
+/* HERO STYLES */
+
+.hero{
+    align-self: center;
+    margin-top:48px;
+}
+
+.hero p{
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 16px;
+}
+
+.inline-link-list{
+    padding: 0;
+}
+
+#hero-links li{
+    padding-bottom: 16px;
+}
+
+#hero-links a{
+    font-size: 18px;
+    margin-right: 40px;
+}
+
+#main-photos{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.portrait-photo{
+    width: 25%;
+}
+
+.landscape-photo{
+    width: 50%;
+}
+
+.landscape-photo img{
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Tita Collective Section */
+
+#tita-collective{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+#tita-collective h2{
+    margin-bottom: 24px;
+}
+
+#tita-item-row{
+    display: flex;
+}
+
+.tita-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.tita-item:last-child{
+    margin-right: 0;
+}
+
+.tita-item h3 {
+    margin: 24px 0 16px 0;
+    line-height: 24px;
+}
+
+.tita-item p {
+    margin-top: 0;
+    margin-bottom: 16px;
+    flex-grow: 1;
+}
+
+/* FOOTER STYLES */
+
+#footer{
+    display: flex;
+    grid-column: span 12;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 1px solid #979797;
+    padding-top: 32px;
+}
+
+#footer-links a {
+    margin: 0 12px;
+}
+
+/* GENERAL STYLES */
+
+img{
+    border-radius: 3px;
+    width: 100%;
+}
+
+p{
+    font-size: 16px;
+    line-height: 28px;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+a{
+    color: #2860D1;
+    text-decoration: none; 
+}
+
+a:hover{
+    color: #1E4188;
+}
+
+h1{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+    margin: 0 0 16px 0;
+}
+
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+b,u,i,center,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary,
+time,mark,audio,video{
+    border:0;
+    outline:0;
+    vertical-align:baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section{
+    display:block;
+}
+body{
+    line-height:1;
+    font-family: 'Merriweather', serif;
+}
+ol,ul{
+    list-style:none;
+}
+blockquote,q{
+    quotes:none;
+}
+blockquote:before,blockquote:after,
+q:before,q:after{
+    content:’’;
+    content:none;
+}
+/* remember to define visible focus styles! 
+:focus{
+    outline:?????;
+} */
+
+/* remember to highlight inserts somehow! */
+ins{
+    text-decoration:none;
+}
+del{
+    text-decoration:line-through;
+}
+
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+
+
+
+
+/*------------------------------------*\
+    $MAIN
+\*------------------------------------*/
+/* GO! */
